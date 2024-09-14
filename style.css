@@ -1,0 +1,111 @@
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.app{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+}
+
+.box{
+    text-align: center;
+}
+
+.boxName{
+    margin-bottom: 5px;
+}
+
+.box input,
+.box select {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+.main {
+    flex-grow: 1;
+    padding-left: 20px; 
+}
+
+.canvas{
+    border: 1px solid;
+    margin: auto;
+}
+
+.footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    width: 170px;
+    height: 40px; 
+    border-radius: 20px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer #savebtn:hover {
+    color: white;
+    background-color: #45a049; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer #savebtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); 
+}
+
+.footer #clearbtn:hover {
+    color: white;
+    background-color: #d31f1f; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer #clearbtn:active {
+    background-color: #930a0a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); 
+}
+
+.footer #retrivebtn:hover {
+    color: white;
+    background-color: #3a7ebe; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer #retrivebtn:active {
+    background-color: #164f84;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); 
+}
+
+.footer button:focus {
+    outline: none;
+}
+

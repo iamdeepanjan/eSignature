@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSignature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="heading">Create your eSignature</p>
+    <div class="app">
+        <div class="sidebar">
+            <div class="box">
+                <div class="boxName">Text Color</div>
+                <input type="color" name="textColor" id="textColor">
+            </div>
+            <div class="box">
+                <div class="boxName">Background Color</div>
+                <input type="color" name="bgColor" id="bgColor"  value="#ffffff">
+            </div>
+            <div class="box">
+                <div class="boxName">Font Size</div>
+                <select name="fontSize" id="fontSize">
+                    <option value="1">1px</option>
+                    <option value="3">3px</option>
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                    <option value="20">20px</option>
+                </select>
+            </div>
+        </div>
+        <div class="main">
+            <canvas class="canvas" id="canvas" width="600" height="400"></canvas>
+            <div class="footer">
+                <button type="button" id="clearbtn">Clear</button>
+                <button type="button" id="retrivebtn">Retrive saved signature</button>
+                <button type="button" id="savebtn">Save & Download</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
