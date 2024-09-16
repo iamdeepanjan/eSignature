@@ -23,6 +23,7 @@ fontSize.addEventListener('change', (event)=>{
     ctx.lineWidth = event.target.value;
 });
 
+//drawing
 canvas.addEventListener('mousedown', (event)=>{
     isDrawing = true;
     x = event.offsetX;
